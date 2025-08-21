@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Nipnetic</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="style.css">
+<link rel="stylesheet" href="style.css" />
+
+  <meta name="description" content="Nipnetic — choose your campaign: BassSkin, SukiMod, HardSignal." />
+</head>
+<body class="landing">
+  <header class="sr-only" role="banner">
+    <h1>Nipnetic</h1>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <button id="logoButton" class="logo-button" aria-controls="chooser" aria-expanded="false">
+      <img id="logo" src="assets/nipnetic_logo.png" alt="Nipnetic logo — tap to choose a campaign" width="320" height="320" loading="eager">
+    </button>
+
+    <p id="chooseText" class="choose-text" aria-hidden="true">Choose Your Frequency</p>
+
+    <section id="chooser" class="campaigns" aria-label="Campaigns">
+      <a class="campaign-card card--bassskin" href="bassskin.html" aria-label="Enter BassSkin campaign">
+        <img src="assets/bassskin_hero.png" alt="BassSkin" width="416" height="608" loading="lazy">
+        <h3>BassSkin</h3>
+      </a>
+      <a class="campaign-card card--sukimod" href="sukimod.html" aria-label="Enter SukiMod campaign">
+        <img src="assets/sukimod_hero.png" alt="SukiMod" width="416" height="608" loading="lazy">
+        <h3>SukiMod</h3>
+      </a>
+      <a class="campaign-card card--hardsignal" href="hardsignal.html" aria-label="Enter HardSignal campaign">
+        <img src="assets/hardsignal_hero.png" alt="HardSignal" width="416" height="608" loading="lazy">
+        <h3>HardSignal</h3>
+      </a>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
