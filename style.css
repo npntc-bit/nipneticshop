@@ -22,7 +22,7 @@ body.landing{min-height:100vh;display:grid;place-items:center;background:radial-
 .campaign-card h3{margin:10px 12px 14px;font-size:clamp(16px,2vw,18px)}
 .campaign-card:hover,.campaign-card:focus-visible{transform:translateY(-3px);border-color:rgba(255,255,255,.24);box-shadow:0 16px 34px rgba(0,0,0,.45)}
 .page-header{padding-block:clamp(12px,2vw,20px)}
-.top-nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.top-nav{display:flex;align-items:left;justify-content:space-between;gap:12px}
 .brand{margin:0;font-size:clamp(22px,3vw,32px)}
 .back{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid var(--stroke);color:var(--text);text-decoration:none;background:var(--card)}
 .back:focus-visible{outline:2px dashed var(--cyan);outline-offset:4px}
@@ -32,16 +32,16 @@ body.landing{min-height:100vh;display:grid;place-items:center;background:radial-
 @media (min-width:860px){.products{grid-template-columns:repeat(2,1fr)}}
 .product-card{background:rgba(0,0,0,.35);border:1px solid var(--stroke);border-radius:16px;overflow:clip;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
 .product-card:focus-within,.product-card:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.22);box-shadow:0 18px 34px rgba(0,0,0,.45)}
-.product-top{display:grid;grid-template-columns:1fr;align-items:center;gap:14px;padding:14px}
+.product-top{display:grid;grid-template-columns:1fr;align-items:left;gap:14px;padding:14px}
 .product-top img{width:100%;max-width:420px;margin-inline:auto;border-radius:12px}
-.product-title{margin:0;font-size:clamp(18px,2.4vw,24px);text-align:center}
+.product-title{margin:0;font-size:clamp(18px,2.4vw,24px);text-align:left}
 .reveal{max-height:0;opacity:0;padding:0 16px;overflow:hidden;transition:max-height .35s ease,opacity .35s ease,padding .35s ease}
 .product-card:hover .reveal,.product-card:focus-within .reveal{max-height:260px;opacity:1;padding:0 16px 16px}
 .product-desc{color:var(--text);opacity:.9;line-height:1.55}
 .price{font-weight:700;margin-top:8px}
 .btn-primary{margin-top:10px;display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid var(--stroke);color:var(--text);background:var(--card);cursor:pointer}
 .btn-primary:focus-visible{outline:2px dashed var(--magenta);outline-offset:3px}
-body.bassskin{background:linear-gradient(135deg,#7b2ff7 0%, #00f7ff 100%) fixed}
-body.sukimod{background:linear-gradient(135deg,#ff007f 0%, #ff77d4 100%) fixed}
-body.hardsignal{background:linear-gradient(135deg,#121212 0%, #39ff14 100%) fixed}
+body.bassskin{background:linear-gradient(135deg,#e709db 20%, #000000 80%) fixed}
+body.sukimod{background:linear-gradient(135deg,#0654c7 20%, #000000 80%) fixed}
+body.hardsignal{background:linear-gradient(135deg,#6009d9 20%, #000000 80%) fixed}
 .site-footer{padding:18px 0 40px;text-align:center;color:var(--muted);font-size:14px}
