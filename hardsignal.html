@@ -12,6 +12,18 @@
 
   <meta name="description" content="HardSignal campaign — products from Nipnetic." />
   <title>HardSignal | Nipnetic</title>
+
+<meta name="shopify-shop" content="nipnetic.myshopify.com">
+<meta name="shopify-storefront-token" content="">
+<meta name="shopify-api-version" content="2024-07">
+<script>
+  window.__SHOPIFY_CONFIG__ = {
+    shop: "nipnetic.myshopify.com",
+    token: "", // insert your Storefront API token here
+    version: "2024-07"
+  };
+</script>
+
 </head>
 <body class="hardsignal">
   <header class="page-header" role="banner">
@@ -25,40 +37,16 @@
     </figure>
   </header>
 
-  <main class="products container" role="main">
-    <article class="product-card" tabindex="0">
+  <main class="products container" role="main" data-shopify-collection="hardsignal">
+    <article data-product-template class="product-card" tabindex="0">
       <div class="product-top">
-        <img src="assets/product_placeholder.png" alt="HardSignal product image" width="400" height="400" loading="lazy">
-        <h2 class="product-title">HardSignal Product One</h2>
+        <img src="assets/product_placeholder.png" alt="HardSignal product image" width="400" height="400" loading="lazy" data-bind="image">
+        <h2 class="product-title" data-bind="title">HardSignal Product One</h2>
       </div>
       <div class="reveal">
-        <p class="product-desc">High-energy design aligned with the HardSignal theme — durable, crowd-ready, with reflective accents.</p>
-        <p class="price" aria-label="price">$59</p>
-        <button class="btn-primary" type="button" aria-label="Add HardSignal Product One to cart">Add to Cart</button>
-      </div>
-    </article>
-
-    <article class="product-card" tabindex="0">
-      <div class="product-top">
-        <img src="assets/product_placeholder.png" alt="HardSignal product image" width="400" height="400" loading="lazy">
-        <h2 class="product-title">HardSignal Product Two</h2>
-      </div>
-      <div class="reveal">
-        <p class="product-desc">Built for motion and comfort. Breathable materials, quick-dry, and statement visuals.</p>
-        <p class="price" aria-label="price">$79</p>
-        <button class="btn-primary" type="button" aria-label="Add HardSignal Product Two to cart">Add to Cart</button>
-      </div>
-    </article>
-
-    <article class="product-card" tabindex="0">
-      <div class="product-top">
-        <img src="assets/product_placeholder.png" alt="HardSignal product image" width="400" height="400" loading="lazy">
-        <h2 class="product-title">HardSignal Product Three</h2>
-      </div>
-      <div class="reveal">
-        <p class="product-desc">Signature piece of the HardSignal set. Modular add-ons and premium finishing.</p>
-        <p class="price" aria-label="price">$99</p>
-        <button class="btn-primary" type="button" aria-label="Add HardSignal Product Three to cart">Add to Cart</button>
+        <p class="product-desc" data-bind="description">High-energy design aligned with the HardSignal theme — durable, crowd-ready, with reflective accents.</p>
+        <p class="price" aria-label="price" data-bind="price">$59</p>
+        <a class="btn-primary" data-bind="addToCartUrl">Add to Cart</a>
       </div>
     </article>
   </main>
@@ -66,5 +54,6 @@
   <footer class="site-footer container">
     <p>© Nipnetic 2025</p>
   </footer>
+  <script src="shopify-populate.js" defer></script>
 </body>
 </html>
